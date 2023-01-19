@@ -63,6 +63,7 @@
 .pokemon-name {
     font-size: 18px;
     padding: 8px;
+    text-transform: capitalize;
 }
 
 .pokemon-name:hover {
@@ -72,7 +73,162 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /* PokemonView */
+
+.pokemon-view {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.pokemon-object-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+/* TYPES */
+
+.types-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.type {
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 4px 12px;
+
+    margin: 12px;
+}
+
+.grass {
+    background-color: green;
+    color: white;
+}
+
+.poison {
+    background-color: purple;
+    color: white;
+}
+
+/* Sprites */
+
+.sprite-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sprite {
+    height: 256px;
+    width: 256px;
+    background-color: #e2e2e2;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+/* Extra info */
+
+/* Biometrics */
+
+.biometrics {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center
+}
+
+.metric-title {
+    background-color: #ef5350;
+    color: white;
+    border-radius: 4px;
+}
+
+.biometrics-row {
+    background-color: #ef5350;
+    color: white;
+}
+
+.metric {
+    width: 128px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.metric-num {
+    background-color: #969696;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Stats */
+
+.stats-table {
+    /* background-color: #e2e2e2; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center
+}
+
+.stats-table-title {
+    background-color: #ef5350;
+    color: white;
+    border-radius: 4px;
+}
+
+.labels-row {
+    background-color: #ef5350;
+    color: white;
+}
+
+.label {
+    width: 128px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.stat {
+    background-color: #969696;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

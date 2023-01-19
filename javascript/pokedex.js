@@ -4,7 +4,7 @@ export default function pokedex(pokemonList) {
         ${pokemonList.results.map(pokemon => {
             return `
             <div class="pokemon-object">
-                <h1 class="pokemon-name">${pokemon.name.toUpperCase()}</h1>
+                <h1 class="pokemon-name">${pokemon.name}</h1>
                 <input type="hidden" class="pokemon-url" value="${pokemon.url}">
             </div>
             `

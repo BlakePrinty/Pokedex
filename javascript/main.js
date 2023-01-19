@@ -1,6 +1,11 @@
 import navigation from "./navigation.js";
 import pokedex from "./pokedex.js";
-import pokemonView from "./pokemon.js";
+import pokemon_stats from "./pokemon_stats.js";
+import pokemon_name from "./pokemon_name.js";
+
+
+
+
 import footer from "./footer.js";
 
 const container = document.querySelector(".container");
@@ -39,7 +44,8 @@ function showDex(pokemonList) {
 
 function makePokemonView(pokemonObject) {
     container.innerHTML = navigation();
-    container.innerHTML += pokemonView();
+    container.innerHTML += pokemon_name(pokemonObject);
+    container.innerHTML += pokemon_stats(pokemonObject);
     container.innerHTML += footer();
 }
 
