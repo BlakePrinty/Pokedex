@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: PopBold;
-    src: url(/fonts/Poppins-Bold.ttf);
+    src: url(./fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
     font-family: PopLight;
-    src: url(/fonts/Poppins-Light.ttf);
+    src: url(./fonts/Poppins-Light.ttf);
 }
 
 .navigation {
