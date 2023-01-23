@@ -16,12 +16,3 @@
     background-color: #ef5350;
     color: white;
 }
-
-
-.development {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
