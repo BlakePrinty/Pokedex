@@ -50,7 +50,7 @@ body {
 }
 
 .pokedex-table {
-    width: 60%;
+    width: 50%;
     background-color: #1f1f1f;
 }
 
@@ -114,9 +114,13 @@ body {
 .sprite {
     height: 128px;
     width: 128px;
+    padding: 8px;
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 24px;
+    border: 2px solid #1f1f1f;
+    background-color: #313131;
+    border-radius: 8px;
 }
 
 .pokemon-type {
@@ -130,14 +134,18 @@ body {
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 24px;
-    padding: 4px 24px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 128px;
     border-radius: 4px;
 }
 
 .stats-table {
     table-layout: fixed;
-    width: 60%;
+    width: 50%;
     background-color: #1f1f1f;
+    margin-bottom: 24px;
 }
 
 .stats-title-row {
@@ -154,6 +162,108 @@ body {
     height: 32px;
     background-color: #313131;
     text-align: center;
+}
+
+/* Styling for games available in */
+
+.game-indices {
+    width: 50%;
+    background-color: #1f1f1f;
+}
+
+.game-indices-title-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.game-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.game-name-row {
+    height: 32px;
+    background-color: #313131;
+    text-align: center;
+}
+
+/* Styling for Moves table */
+
+.moves-table {
+    margin-bottom: 24px;
+    width: 50%;
+    background-color: #1f1f1f;
+}
+
+.moves-title-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.moves-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.labels, .moves-rows {
+    height: 32px;
+    background-color: #313131;
+}
+
+.level-learned, .move-learned, .method-learned {
+    text-align: center;
+}
+
+.move-level {
+    text-align: right;
+    padding-right: 12px;
+}
+
+.move-name, .move-method {
+    padding-left: 12px;
+}
+
+.move-method {
+    width: 128px;
+}
+
+/* Styling for abilities */
+
+.abilities-table {
+    margin-bottom: 24px;
+    width: 50%;
+    background-color: #1f1f1f;
+}
+
+.abilities-title-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.abilities-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.abilities-labels-row {
+    text-align: center;
+    height: 32px;
+    background-color: #313131;
+}
+
+.abilities-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.ability-type {
+    text-align: right;
+    padding-right: 12px;
+}
+
+.ability-name {
+    text-align: left;
+    padding-left: 12px;
 }
 
 
