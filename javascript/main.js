@@ -39,6 +39,33 @@ function pokemonPage(pokemon) {
     navTitle.addEventListener("click", () => {
         window.location.reload();
     });
+
+    const backButton = container.querySelector(".back-arrow");
+    const nextButton = container.querySelector(".next-arrow");
+    const pokemonID = container.querySelector(".poke-num");
+    backButton.addEventListener("click", () => {
+        if (pokemonID.innerHTML == "#1") {
+            window.location.reload();
+        } else {
+            fetch(`https://pokeapi.co/api/v2/pokemon/${(pokemon.id) - 1}/`)
+            .then(res => res.json())
+            .then(prevPokemon => {
+                pokemonPage(prevPokemon);
+            })
+        }
+    })
+
+    nextButton.addEventListener("click", () => {
+        if (pokemonID.innerHTML == "#151") {
+            window.location.reload();
+        } else {
+            fetch(`https://pokeapi.co/api/v2/pokemon/${(pokemon.id) + 1}/`)
+            .then(res => res.json())
+            .then(nextPokemon => {
+                pokemonPage(nextPokemon);
+            })
+        }
+    })
 }
 
 getKantoDex();

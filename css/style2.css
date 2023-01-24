@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* border: 1px solid blue; */
+}
+
+body {
+    background-color: #2b2b2b;
+}
+
+/* Styling for navigation */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    
+    background-color: #ef5350;
+    color: white;
+}
+
+.nav-title {
+    font-size: 28px;
+    padding: 8px 16px;
+}
+
+.nav-title:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+/* Styling for Pokedex */
+
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    color: white;
+}
+
+.pokedex-region {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.pokedex-table {
+    width: 50%;
+    background-color: #1f1f1f;
+}
+
+.pokedex-title-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.pokedex-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.pokemon-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.entry-num {
+    width: 32px;
+    padding-right: 12px;
+    padding-left: 12px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.pokemon-name {
+    padding-left: 12px;
+    font-size: 18px;
+}
+
+.pokemon-name:hover {
+    cursor: pointer;
+    color: #ef5350;
+}
+
+/* Styling for Pokemon */
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    color: white;
+}
+
+.pokemon-info-name {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.pokemon-sprites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sprite {
+    height: 128px;
+    width: 128px;
+    padding: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+    border: 2px solid #1f1f1f;
+    background-color: #313131;
+    border-radius: 8px;
+}
+
+.pokemon-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.type {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 128px;
+    border-radius: 4px;
+}
+
+.stats-table {
+    table-layout: fixed;
+    width: 50%;
+    background-color: #1f1f1f;
+    margin-bottom: 24px;
+}
+
+.stats-title-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.stats-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.stats-labels-row, .stats-row {
+    height: 32px;
+    background-color: #313131;
+    text-align: center;
+}
+
+/* Styling for games available in */
+
+.game-indices {
+    width: 50%;
+    background-color: #1f1f1f;
+}
+
+.game-indices-title-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.game-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.game-name-row {
+    height: 32px;
+    background-color: #313131;
+    text-align: center;
+}
+
+/* Styling for Moves table */
+
+.moves-table {
+    margin-bottom: 24px;
+    width: 50%;
+    background-color: #1f1f1f;
+}
+
+.moves-title-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.moves-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.labels, .moves-rows {
+    height: 32px;
+    background-color: #313131;
+}
+
+.level-learned, .move-learned, .method-learned {
+    text-align: center;
+}
+
+.move-level {
+    text-align: right;
+    padding-right: 12px;
+}
+
+.move-name, .move-method {
+    padding-left: 12px;
+}
+
+.move-method {
+    width: 128px;
+}
+
+/* Styling for abilities */
+
+.abilities-table {
+    margin-bottom: 24px;
+    width: 50%;
+    background-color: #1f1f1f;
+}
+
+.abilities-title-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.abilities-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+.abilities-labels-row {
+    text-align: center;
+    height: 32px;
+    background-color: #313131;
+}
+
+.abilities-row {
+    height: 32px;
+    background-color: #313131;
+}
+
+.ability-type {
+    text-align: right;
+    padding-right: 12px;
+}
+
+.ability-name {
+    text-align: left;
+    padding-left: 12px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* POKEMON TYPES */
+
+.grass {
+    background-color: #00b11d;
+}
+.fire {
+    background-color: #ff4d4d;
+}
+.water {
+    background-color: #4d67ff;
+}
+.electric {
+    background-color: #ffd727;
+}
+.ice {
+    background-color: #4deaff;
+}
+.fighting {
+    background-color: #a84d03;
+}
+.poison {
+    background-color: #6800ca;
+}
+.ground {
+    background-color: #805216;
+}
+.flying {
+    background-color: #b4c0ff;
+}
+.psychic {
+    background-color: #d876ff;
+}
+.bug {
+    background-color: #7da340;
+}
+.rock {
+    background-color: #b95613;
+}
+.ghost {
+    background-color: #3a478f;
+}
+.dark {
+    background-color: #2c2c2c;
+}
+.dragon {
+    background-color: #28378f;
+}
+.steel {
+    background-color: #8b8b8b;
+}
+.fairy {
+    background-color: #ff4de7;
+}
+.normal {
+    background-color: #b3b3b3;
+}
