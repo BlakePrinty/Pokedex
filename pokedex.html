@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,98 +8,154 @@
     <title>BP - Pokédex</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<div class="container">
+    <div class="container">
 
-    <nav class="nav">
-        <h1 class="nav-title">Pokédex</h1>
-    </nav>
+        <nav class="nav">
+            <h1 class="nav-title">Pokédex</h1>
+        </nav>
 
-    <section class="pokemon-info">
+        <section class="pokemon-info">
 
-        <h1 class="pokemon-info-name">Bulbasaur</h1>
+            <div class="poke-info">
+                <h1 class="poke-num">#1</h1>
+                <h1 class="poke-name">Bulbasaur</h1>
+            </div>
 
-        <div class="pokemon-sprites">
-            <img class="sprite" src="" alt="">
-            <img class="sprite" src="" alt="">
-        </div>
+            <table class="pokemon-view-table">
+                <tr class="table-title-row">
+                    <td colspan="2" class="table-title">
+                        <h1 class="title">Picture</h1>
+                    </td>
+                </tr>
+                <tr class="table-content-row">
+                    <td class="table-content left">
+                        <img class="sprite"
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
+                            alt="">
+                    </td>
+                    <td class="table-content right">
+                        <img class="sprite"
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/1.png"
+                            alt="">
+                    </td>
+                </tr>
+            </table>
 
-        <div class="pokemon-type">
-            <h1 class="type water">Water</h1>
-            <h1 class="type water hidden">Water</h1>
-        </div>
+            <table class="pokemon-view-table">
+                <tr class="table-title-row">
+                    <td class="table-title">
+                        <h1 class="title">Name</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Type</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Abilities</h1>
+                    </td>
+                </tr>
+                <tr class="table-content-row">
+                    <td class="table-content">
+                        <h2 class="content">Bulbasaur</h2>
+                    </td>
+                    <td class="table-content types">
+                        <h1 class="content type grass">Grass</h1>
+                        <h1 class="content type poison">Poison</h1>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">Overgrow</h2>
+                        <h2 class="content">Chlorophyl</h2>
+                    </td>
+                </tr>
+            </table>
 
-        <table class="abilities-table">
-            <tr class="abilities-title-row">
-                <td colspan="2" class="abilities-title">Abilities</td>
-            </tr>
-            <tr class="abilities-labels-row">
-                <td class="ability-type-label">Ability Type</td>
-                <td class="ability-name-label">Ability Name</td>
-            </tr>
-            <tr class="abilities-row">
-                <td class="ability-type">Ability Type</td>
-                <td class="ability-name">Ability Name</td>
-            </tr>
-        </table>
+            <table class="pokemon-view-table">
+                <tr class="table-title-row">
+                    <td class="table-title">
+                        <h1 class="title">Height</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Weight</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Base Experience</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Base Stat Total</h1>
+                    </td>
+                </tr>
+                <tr class="table-content-row">
+                    <td class="table-content">
+                        <h2 class="content">53</h2>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">63</h2>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">265</h2>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">256</h2>
+                    </td>
+                </tr>
+            </table>
 
-        <table class="moves-table">
-            <tr class="moves-title-row">
-                <td colspan="2" class="moves-title">Moves</td>
-            </tr>
-            <tr class="labels">
-                <td class="level-learned">Level</td>
-                <td class="move-learned">Move</td>
-            </tr>
-            <tr class="moves-rows">
-                <td class="move-level">12</td>
-                <td class="move-name">Leaf Storm</td>
-            </tr>
-        </table>
+            <table class="pokemon-view-table">
+                <tr class="table-title-row">
+                    <td colspan="6" class="table-title">
+                        <h1 class="title">Stats</h1>
+                    </td>
+                </tr>
+                <tr class="table-title-row">
+                    <td class="table-title">
+                        <h1 class="title">HP</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Attack</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Defense</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Special Attack</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Special Defense</h1>
+                    </td>
+                    <td class="table-title">
+                        <h1 class="title">Speed</h1>
+                    </td>
+                </tr>
+                <tr class="table-content-row">
+                    <td class="table-content">
+                        <h2 class="content">53</h2>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">53</h2>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">53</h2>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">53</h2>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">53</h2>
+                    </td>
+                    <td class="table-content">
+                        <h2 class="content">53</h2>
+                    </td>
+                </tr>
+            </table>
 
-        <table class="stats-table">
-            <tr class="stats-title-row">
-                <td colspan="6" class="stats-title">Stats</td>
-            </tr>
-            <tr class="stats-labels-row">
-                <td class="stat-label">HP</td>
-                <td class="stat-label">Attack</td>
-                <td class="stat-label">Defense</td>
-                <td class="stat-label">Special Attack</td>
-                <td class="stat-label">Special Defense</td>
-                <td class="stat-label">Speed</td>
-            </tr>
-            <tr class="stats-row">
-                <td class="stat-row">40</td>
-                <td class="stat-row">60</td>
-                <td class="stat-row">80</td>
-                <td class="stat-row">20</td>
-                <td class="stat-row">10</td>
-                <td class="stat-row">90</td>
-            </tr>
-        </table>
+        </section>
 
-        <table class="game-indices">
-            <tr class="game-indices-title-row">
-                <td class="game-title">Games</td>
-            </tr>
-            <tr class="game-name-row">
-                <td class="game-name">Red</td>
-            </tr>
-            <tr class="game-name-row">
-                <td class="game-name">Red</td>
-            </tr>
-            <tr class="game-name-row">
-                <td class="game-name">Red</td>
-            </tr>
-        </table>
-
-    </section>
-
-</div>
+    </div>
 
 
 
-<!-- <script src="./javascript/main.js" type="module"></script> -->
+    <!-- <script src="./javascript/main.js" type="module"></script> -->
 </body>
+
 </html>

@@ -34,7 +34,7 @@ body {
 
 /* Styling for Pokedex */
 
-.pokedex {
+.pokedex-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,50 +44,88 @@ body {
     color: white;
 }
 
-.pokedex-region {
-    font-size: 32px;
+.pokedex-table {
+    table-layout: fixed;
+    width: 60%;
     margin-bottom: 24px;
 }
 
-.pokedex-table {
-    width: 50%;
-    background-color: #1f1f1f;
-}
-
 .pokedex-title-row {
-    height: 32px;
-    background-color: #313131;
+    background-color: #ef5350;
+    color: white;
 }
 
 .pokedex-title {
+    border-radius: 6px;
+}
+
+.dex-title {
     font-size: 24px;
     text-align: center;
 }
 
 .pokemon-row {
-    height: 32px;
-    background-color: #313131;
+    background-color: #3d3d3d;
 }
 
-.entry-num {
-    width: 32px;
-    padding-right: 12px;
-    padding-left: 12px;
+.entry-num-content {
+    border-radius: 6px;
     text-align: right;
-    font-size: 18px;
+    padding-right: 12px;
+    font-size: 12px;
 }
 
-.pokemon-name {
+.pokemon-name-content {
+    border-radius: 6px;
+    text-align: left;
     padding-left: 12px;
-    font-size: 18px;
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-.pokemon-name:hover {
+.pokemon-name-content:hover {
     cursor: pointer;
     color: #ef5350;
 }
 
-/* Styling for Pokemon */
+/* Poke info */
+
+.poke-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 80%;
+}
+
+.back-arrow {
+    height: 32px;
+    margin-right: 18px;
+    fill: white;
+}
+
+.next-arrow {
+    height: 32px;
+    margin-left: 18px;
+    fill: white;
+}
+
+.back-arrow:hover, .next-arrow:hover {
+    cursor: pointer;
+    fill: #ef5350;
+}
+
+.poke-num {
+    margin-right: 18px;
+    font-size: 24px;
+}
+
+.poke-name {
+    font-size: 24px;
+}
+
+/* Pokemon View Table */
 
 .pokemon-info {
     display: flex;
@@ -99,189 +137,152 @@ body {
     color: white;
 }
 
-.pokemon-info-name {
-    font-size: 32px;
-    margin-bottom: 12px;
+.pokemon-view-table {
+    table-layout: fixed;
+    width: 80%;
+    margin-bottom: 24px;
 }
 
-.pokemon-sprites {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.table-title-row {
+    background-color: #ef5350;
+    color: white;
+}
+
+.table-title {
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.table-content-row {
+    background-color: #363636;
+}
+
+.table-content {
+    text-align: center;
+    border-radius: 6px;
 }
 
 .sprite {
-    height: 128px;
-    width: 128px;
-    padding: 8px;
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 24px;
-    border: 2px solid #1f1f1f;
-    background-color: #313131;
-    border-radius: 8px;
+    height: 256px;
+    width: 256px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px solid #2b2b2b;
+    background-color: #3d3d3d;
 }
 
-.pokemon-type {
+.title {
+    font-size: 18px;
+}
+
+.content {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.type {
+    width: 100px;
+    border-radius: 6px;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.footer-subtitle {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-logos {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+.footer-item {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-logos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.type {
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 24px;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 128px;
-    border-radius: 4px;
+.footer-item-img {
+    height: 38px;
+    fill: white;
 }
 
-.stats-table {
-    table-layout: fixed;
-    width: 50%;
-    background-color: #1f1f1f;
-    margin-bottom: 24px;
+.credit {
+    color: white;
+    font-size: 14px;
 }
 
-.stats-title-row {
-    height: 32px;
-    background-color: #313131;
+.fill-green {
+    fill: #00b11d;
 }
 
-.stats-title {
-    font-size: 24px;
-    text-align: center;
+.fill-red {
+    fill: #ef5350;
 }
 
-.stats-labels-row, .stats-row {
-    height: 32px;
-    background-color: #313131;
-    text-align: center;
+.fill-blue {
+    fill: #28378f;
 }
 
-/* Styling for games available in */
 
-.game-indices {
-    width: 50%;
-    background-color: #1f1f1f;
-}
 
-.game-indices-title-row {
-    height: 32px;
-    background-color: #313131;
-}
 
-.game-title {
-    text-align: center;
-    font-size: 24px;
-}
 
-.game-name-row {
-    height: 32px;
-    background-color: #313131;
-    text-align: center;
-}
 
-/* Styling for Moves table */
 
-.moves-table {
-    margin-bottom: 24px;
-    width: 50%;
-    background-color: #1f1f1f;
-}
 
-.moves-title-row {
-    height: 32px;
-    background-color: #313131;
-}
 
-.moves-title {
-    text-align: center;
-    font-size: 24px;
-}
 
-.labels, .moves-rows {
-    height: 32px;
-    background-color: #313131;
-}
-
-.level-learned, .move-learned, .method-learned {
-    text-align: center;
-}
-
-.move-level {
+.left {
     text-align: right;
     padding-right: 12px;
 }
 
-.move-name, .move-method {
-    padding-left: 12px;
-}
-
-.move-method {
-    width: 128px;
-}
-
-/* Styling for abilities */
-
-.abilities-table {
-    margin-bottom: 24px;
-    width: 50%;
-    background-color: #1f1f1f;
-}
-
-.abilities-title-row {
-    height: 32px;
-    background-color: #313131;
-}
-
-.abilities-title {
-    text-align: center;
-    font-size: 24px;
-}
-
-.abilities-labels-row {
-    text-align: center;
-    height: 32px;
-    background-color: #313131;
-}
-
-.abilities-row {
-    height: 32px;
-    background-color: #313131;
-}
-
-.ability-type {
-    text-align: right;
-    padding-right: 12px;
-}
-
-.ability-name {
+.right {
     text-align: left;
     padding-left: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* POKEMON TYPES */
 
