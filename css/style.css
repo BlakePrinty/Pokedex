@@ -32,6 +32,63 @@ body {
     cursor: pointer;
 }
 
+/* Styling for Pokedex */
+
+.pokedex-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    color: white;
+}
+
+.pokedex-table {
+    table-layout: fixed;
+    width: 60%;
+    margin-bottom: 24px;
+}
+
+.pokedex-title-row {
+    background-color: #ef5350;
+    color: white;
+}
+
+.pokedex-title {
+    border-radius: 6px;
+}
+
+.dex-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.pokemon-row {
+    background-color: #3d3d3d;
+}
+
+.entry-num-content {
+    border-radius: 6px;
+    text-align: right;
+    padding-right: 12px;
+    font-size: 12px;
+}
+
+.pokemon-name-content {
+    border-radius: 6px;
+    text-align: left;
+    padding-left: 12px;
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pokemon-name-content:hover {
+    cursor: pointer;
+    color: #ef5350;
+}
+
 /* Poke info */
 
 .poke-info {
@@ -142,8 +199,71 @@ body {
 
 
 
+/* Footer */
 
+.footer {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
 
+.footer-title {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.footer-subtitle {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-logos {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+.footer-item {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item-img {
+    height: 38px;
+    fill: white;
+}
+
+.credit {
+    color: white;
+    font-size: 14px;
+}
+
+.fill-green {
+    fill: #00b11d;
+}
+
+.fill-red {
+    fill: #ef5350;
+}
+
+.fill-blue {
+    fill: #28378f;
+}
 
 
 
@@ -156,10 +276,12 @@ body {
 
 .left {
     text-align: right;
+    padding-right: 12px;
 }
 
 .right {
     text-align: left;
+    padding-left: 12px;
 }
 
 /* POKEMON TYPES */

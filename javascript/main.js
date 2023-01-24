@@ -1,6 +1,7 @@
 import nav from "./nav.js";
 import pokedex from "./pokedexView.js";
 import pokemonView from "./pokemonView.js";
+import footer from "./footer.js";
 
 const container = document.querySelector(".container");
 
@@ -15,6 +16,7 @@ function getKantoDex() {
 function homePage(pokedexJSON) {
     container.innerHTML = nav();
     container.innerHTML += pokedex(pokedexJSON);
+    container.innerHTML += footer();
 
     const pokemonObjects = container.querySelectorAll(".pokemon-row");
     pokemonObjects.forEach(pokemonObject => {
@@ -34,6 +36,7 @@ function homePage(pokedexJSON) {
 function pokemonPage(pokemon) {
     container.innerHTML = nav();
     container.innerHTML += pokemonView(pokemon);
+    container.innerHTML += footer();
 
     const navTitle = container.querySelector(".nav-title");
     navTitle.addEventListener("click", () => {
